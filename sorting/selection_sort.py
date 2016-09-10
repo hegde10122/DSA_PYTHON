@@ -1,4 +1,6 @@
 import time
+# the selection sort for a parameter as a list of elements
+
 
 def selection_sort(the_list):
     n = len(the_list)
@@ -6,7 +8,7 @@ def selection_sort(the_list):
     if n <= 1:
         return
 
-    start_time = time.time()
+    start_time = time.time()  # start time of the algorithm
     for i in range(n - 1):
         min_position = i  # assume that the ith element is the smallest
 
@@ -17,8 +19,8 @@ def selection_sort(the_list):
         # swap the two elements after the inner for loop exits --- swapping using the pair notation
         (the_list[i], the_list[min_position]) = (the_list[min_position], the_list[i])
 
-    end_time = time.time() - start_time
-    print(end_time)
+    end_time = time.time() - start_time # end time of the algorithm
+    print(end_time)  # just to check the amount of time required
     return the_list
 
 print(selection_sort(list(range(50000, 0, -1))))
