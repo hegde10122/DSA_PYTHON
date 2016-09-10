@@ -1,5 +1,5 @@
 import time
-# the selection sort for a parameter as a list of elements
+# the selection sort for a parameter as a list of elements in non-descending order
 
 
 def selection_sort(the_list):
@@ -23,7 +23,7 @@ def selection_sort(the_list):
     print(end_time)  # just to check the amount of time required
     return the_list
 
-print(selection_sort(list(range(50000, 0, -1))))
+print(selection_sort(list(range(500000, 0, -1))))
 '''
 Analysis of selection sort
 
