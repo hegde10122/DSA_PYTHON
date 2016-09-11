@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e33489a0-e605-4fb2-be56-b148a141a70c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sorting/insertion_sort.py" afterPath="$PROJECT_DIR$/sorting/insertion_sort.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sorting/mergesort.py" afterPath="$PROJECT_DIR$/sorting/mergesort.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sorting/merging_lists.py" afterPath="$PROJECT_DIR$/sorting/merging_lists.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sorting/selection_sort.py" afterPath="$PROJECT_DIR$/sorting/selection_sort.py" />
     </list>
     <ignored path="DSA_PYTHON.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,7 +24,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="selection_sort.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="selection_sort.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sorting/selection_sort.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-221">
@@ -37,11 +34,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mergesort.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mergesort.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sorting/mergesort.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+            <state relative-caret-position="347">
+              <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -741,21 +738,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sorting/mergesort.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sorting/selection_sort.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-221">
           <caret line="26" column="36" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sorting/mergesort.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="69" column="0" selection-start-line="69" selection-start-column="0" selection-end-line="69" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

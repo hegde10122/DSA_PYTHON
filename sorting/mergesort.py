@@ -40,7 +40,7 @@ def mergesort1(the_list): # wrapper function that get the list from the user
     return mergesort(the_list, 0, len(the_list))
 
 start_time = time.time()
-print(mergesort1(list(range(500000, 0, -1))))
+print(mergesort1(list(range(5000000, 0, -1))))
 print(time.time() - start_time)
 
 '''
@@ -56,9 +56,17 @@ Case 3: print(mergesort1(list(range(50000, 0, -1))))
 50000 numbers in descending order are now sorted in ascending order
 time taken is 458ms
 
-Case 1: print(mergesort1(list(range(500000, 0, -1))))
+Case 4: print(mergesort1(list(range(500000, 0, -1))))
 500000 numbers in descending order are now sorted in ascending order
 time taken is 5.47s
+
+The data handled is much more than insertion or selection sort.
+
+We are making 19 recursive calls that equal log(500000) = 19
+
+Case 5: print(mergesort1(list(range(5000000, 0, -1))))
+5000000 numbers in descending order are now sorted in ascending order
+time taken is 67.19s
 
 
 '''
