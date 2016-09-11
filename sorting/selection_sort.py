@@ -23,7 +23,8 @@ def selection_sort(the_list):
     print(end_time)  # just to check the amount of time required
     return the_list
 
-print(selection_sort(list(range(500000, 0, -1))))
+# print(selection_sort(list(range(500000, 0, -1))))
+print(selection_sort(list(range(1, 100000))))
 '''
 Analysis of selection sort
 
@@ -32,7 +33,7 @@ In each iteration the length of the segment to be scanned reduces by 1
 
 T(n) = n + (n - 1) + (n - 2) + (n - 3) + ...+ 2 + 1 = n (n + 1)/2 = O(n^2)
 
-We are considering 3 cases :
+We are considering 4 cases :
 The first one is the range of numbers from 500 to 1 in descending order
 print(selection_sort(list(range(500, 0, -1))))
 The time taken is around 18ms.
@@ -44,6 +45,11 @@ The time taken is around 1.79s
 The 3rd case is the range of numbers from 50000 to 1 in descending order
 print(selection_sort(list(range(50000, 0, -1))))
 The time taken is around 207.2s
+
+The 4th case is the range of numbers from 1 to 50000 in non-descending order (already sorted)
+print(selection_sort(list(range(1, 50001))))
+The time taken is around 161s (or 2.5 minutes!!! for a large list that is already sorted)
+
 
 As the size of the list increases the performance of selection sort goes down drastically.
 '''

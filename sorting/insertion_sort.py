@@ -49,8 +49,12 @@ print(inserion_sort(list(range(500,0,-1))))
 The second case of 5000 elements in sorted descending order produces the result in 3.91s
 print(inserion_sort(list(range(5000,0,-1))))
 
-The third case of 50000 elements in sorted descending order produces the result in
+The third case of 50000 elements in sorted descending order produces the result in 431.56s
 print(inserion_sort(list(range(50000,0,-1))))
 
+In insertion sort if the list is already in sorted non-descending order then the result is pretty much
+instantaneous. This happens because the while loop fails as the value to the right is already larger
+and hence insertion sort is much faster for already sorted lists than the selection sort.
+In selection sort we have to scan for the minima till the end in every iteration.
 '''
 
