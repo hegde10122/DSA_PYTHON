@@ -61,7 +61,6 @@ Case 4: print(mergesort1(list(range(500000, 0, -1))))
 time taken is 5.47s
 
 The data handled is much more than insertion or selection sort.
-
 We are making 19 recursive calls that equal log(500000) = 19
 
 Case 5: print(mergesort1(list(range(5000000, 0, -1))))
