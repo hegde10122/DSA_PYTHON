@@ -33,6 +33,14 @@ def merge_lists(A, B): # A[0:m] B[0:n]
     return C
 
 
+'''
+How much time does merge take?
 
+merge A of size m, B of size n into C
+In each iteration, we add one element to C
+Size of C is m + n
+m + n <= 2.max(m,n)
+Hence O(max(m,n)) = O(n) if m == n
+'''
 
 

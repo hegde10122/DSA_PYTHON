@@ -67,5 +67,24 @@ Case 5: print(mergesort1(list(range(5000000, 0, -1))))
 5000000 numbers in descending order are now sorted in ascending order
 time taken is 67.19s
 
+Analysis of merge sort
 
+T(n): time taken by merge sort on input of size n
+Assume that n = 2^k for simplicity
+
+T(n) = 2T(n/2) + n (the initial list of size n is broken into 2 parts of size n/2 each while n is the merge component added)
+Two subproblems of size n/2
+merging solutions requires time O(n/2 + n/2) = O(n)
+
+Solve the recurrence by unwinding
+T(1) = 1
+T(n) = 2T(n/2) + n
+     = 2[2(T(n/4) + n/2)] + n
+     = 2^2T(n/2^2) + 2n
+     = 2^2[2T(n/2^3) + n/2^2] + 2n
+     = 2^3T(n/2^3) + 3n
+     = 2^iT(n/2^i) + in  where i = log n (to the base 2)
+
+     When i = log n, n/2^i = 1, T(n/2^i) = 1
+So, T(n) = 2^log n + n.log n = n + nlog n = O(n.log n)
 '''
