@@ -1,9 +1,9 @@
 import time
+
 start_time = time.time()
 
 
 def recursive_fib(n):
-
     if n < 0:
         print('Negative numbers are not allowed in fibonacci sequence')
         return
@@ -13,6 +13,12 @@ def recursive_fib(n):
     else:
         value = recursive_fib(n - 1) + recursive_fib(n - 2)  # recursive call with previous two numbers in sequence
     return value
+
+
+val = recursive_fib(66)
+elapsed_time = time.time() - start_time
+print('elapsed time is ', elapsed_time)
+print(val)
 
 '''
 Uncomment the lines below to see the working of the functions
@@ -40,11 +46,12 @@ def iter_fib(n):
     else:
         x1 = 0
         x2 = 1
-        for i in range(2, n+1):  # range function begins at k and ends at j-1 for range(k,j)
+        for i in range(2, n + 1):  # range function begins at k and ends at j-1 for range(k,j)
             x3 = x1 + x2  # calculate by adding the previous two numbers
-            x1 = x2       # reassign second as first for new calculation
-            x2 = x3       # reassign newly calculated value as the second value for next iterative calculation
+            x1 = x2  # reassign second as first for new calculation
+            x2 = x3  # reassign newly calculated value as the second value for next iterative calculation
     return x2
+
 
 '''
 Uncomment the lines below to see the working of the functions
@@ -61,11 +68,10 @@ Complexity : O(n)
 '''
 
 # better way than the iterative version
-_lookup = {0:0, 1:1}  # lookup table or a dictionary of already calculated values pre-defined with the two base cases
+_lookup = {0: 0, 1: 1}  # lookup table or a dictionary of already calculated values pre-defined with the two base cases
 
 
 def memoized_fib(n):
-
     if n < 0:
         print('Negative numbers are not allowed in fibonacci sequence')
         return
@@ -76,6 +82,7 @@ def memoized_fib(n):
         value = memoized_fib(n - 1) + memoized_fib(n - 2)
     _lookup[n] = value
     return value
+
 
 '''
 Uncomment the lines below to see the working of the functions
@@ -91,4 +98,3 @@ This requires O(n) time
 memoized_fib(35) returns the value 9227465 instantaneously
 Complexity : O(n)
 '''
-
