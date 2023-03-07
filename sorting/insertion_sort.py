@@ -1,17 +1,18 @@
 import time
 
+
 # the function for insertion sort with the list of integer elements as a parameter in non-descending order
 # initially the sorted portion of the list is element at index 0 and with every iteration the sorted portion
 # expands by 1
 
 
-def inserion_sort(the_list):
+def insertion_sort(the_list):
     n = len(the_list)
 
     if n <= 1:
         return
 
-    start_time = time.time()  #  start time of the algorithm
+    start_time = time.time()  # start time of the algorithm
 
     # starts with the first element as the only sorted element.
     for index in range(1, n):
@@ -28,11 +29,12 @@ def inserion_sort(the_list):
         # put the saved value into the "hole" created
         the_list[position] = value
 
-    end_time = time.time() - start_time # end time of the algorithm
+    end_time = time.time() - start_time  # end time of the algorithm
     print(end_time)  # just to check the amount of time required
     return the_list
 
-print(inserion_sort(list(range(50000, 0, -1))))
+
+print(insertion_sort(list(range(50000, 0, -1))))
 
 '''
 In every scan we begin with an ordered portion of 1 which keeps increasing its size by one.
@@ -57,4 +59,3 @@ instantaneous. This happens because the while loop fails as the value to the rig
 and hence insertion sort is much faster for already sorted lists than the selection sort.
 In selection sort we have to scan for the minima till the end in every iteration.
 '''
-

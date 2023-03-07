@@ -15,16 +15,16 @@ def recursive_fib(n):
     return value
 
 
-val = recursive_fib(66)
+val = recursive_fib(35)
 elapsed_time = time.time() - start_time
 print('elapsed time is ', elapsed_time)
 print(val)
 
 '''
 Uncomment the lines below to see the working of the functions
-val = recursive_fib(45)
+val = recursive_fib(35)
 elapsed_time = time.time() - start_time
-print(elapsed_time)
+print('elapsed time is ', elapsed_time)
 print(val)
 
 Explanation:
