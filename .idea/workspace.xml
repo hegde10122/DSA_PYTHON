@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e33489a0-e605-4fb2-be56-b148a141a70c" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/COLLECTIONS.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collections/collections.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dynamic_programming/memoized_fibo.py" beforeDir="false" afterPath="$PROJECT_DIR$/dynamic_programming/memoized_fibo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sorting/insertion_sort.py" beforeDir="false" afterPath="$PROJECT_DIR$/sorting/insertion_sort.py" afterDir="false" />
-    </list>
+    <list default="true" id="e33489a0-e605-4fb2-be56-b148a141a70c" name="Default" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
